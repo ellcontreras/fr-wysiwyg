@@ -5,6 +5,7 @@
       :key="key"
       @click="handleApply(control)"
       class="bg-indigo-400 p-2 border hover:bg-indigo-500 text-white border-none"
+      :title="control.name"
     >
       <img :src="control.iconUrl" class="relative w-4" />
     </button>
@@ -64,7 +65,7 @@
     </div>
 
     <div
-      class="border-indigo-400 border m-2 mt-0 rounded bg-gray-100 border-solid p-4 text-gray-800"
+      class="border-indigo-400 border m-2 mt-2 rounded bg-gray-100 border-solid p-4 text-gray-800"
       contenteditable
       ref="model"
     >
@@ -99,7 +100,7 @@ export default {
         value: ""
       },
       {
-        name: "italic",
+        name: "Italic",
         iconUrl: "https://image.flaticon.com/icons/svg/25/25392.svg",
         cmd: "italic",
         value: ""
@@ -123,7 +124,7 @@ export default {
         value: ""
       },
       {
-        name: "indent",
+        name: "Indent",
         iconUrl: "https://image.flaticon.com/icons/svg/25/25233.svg",
         cmd: "indent",
         value: ""
